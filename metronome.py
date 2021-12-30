@@ -39,13 +39,9 @@ class RepeatedTimer(object):
         self._timer.cancel()
         self.is_running = False
 
-
-
 def playClick():
     global count
     global beats
-    global up
-    global down
 
     if (count > beats):
         count = 1
