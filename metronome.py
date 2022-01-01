@@ -3,8 +3,10 @@ from threading import Timer
 import argparse
 
 my_parser = argparse.ArgumentParser()
-my_parser.add_argument('-bpm', action='store', type=int, default=60, help='the number of beats per minute the metronome should play, default is 60')
-my_parser.add_argument('-beats', action='store',type=int, default=1, help='the number of beats per measure, default is 1 or no measure separator')
+my_parser.add_argument('-bpm', action='store', type=int, default=60, 
+                        help='the number of beats per minute the metronome should play, default is 60')
+my_parser.add_argument('-beats', action='store',type=int, default=1, 
+                        help='the number of beats per measure, default is 1 or no measure separator')
 
 args = my_parser.parse_args()
 
